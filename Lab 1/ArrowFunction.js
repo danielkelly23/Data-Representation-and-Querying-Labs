@@ -37,3 +37,10 @@ console.log(addTask("Check Email")); // Task added and length returned
 console.log(addTask("Do Homework"));
 console.log(addTask("Go Shopping"));
 
+//3c List all tasks
+const listAllTask = () => {
+    console.log("Listing all tasks:");
+    array.forEach(task => console.log(task));
+};
+listAllTask();
+
