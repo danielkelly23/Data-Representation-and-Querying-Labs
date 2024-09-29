@@ -44,3 +44,18 @@ const listAllTask = () => {
 };
 listAllTask();
 
+//3d Deleting a Task
+const deleteTask = (task) => {
+    const index = array.indexOf(task);
+    if (index > -1) {
+        array.splice(index, 1);// note The splice() method in JavaScript is used to modify the contents of an array by removing, replacing, or adding new elements.
+        console.log(`Task "${task}" has been removed.`);
+    } else {
+        console.log(`Task "${task}" not found.`);
+    }
+    return array.length;
+};
+// Removes task and returns the new length
+console.log(deleteTask("Do Homework")); 
+//Show remaining tasks
+listAllTasks(); //error here
