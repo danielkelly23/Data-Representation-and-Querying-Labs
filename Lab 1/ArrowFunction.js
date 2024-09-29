@@ -23,3 +23,17 @@ const multiplyUnder70 = ages.map(age =>
     }
     });
 console.log(multiplyUnder70);
+
+//Q3
+//3a & 3b addTask function
+let array = [];
+const addTask = (task) => {
+    array.push(task);
+    console.log(`Task "${task}" has been added.`);
+    return array.length;
+};
+
+console.log(addTask("Check Email")); // Task added and length returned
+console.log(addTask("Do Homework"));
+console.log(addTask("Go Shopping"));
+
